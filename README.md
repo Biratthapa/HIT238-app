@@ -1,1 +1,1 @@
-# HIT238-app
+This is a comparison website for competetive pricing.
