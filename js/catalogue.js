@@ -1,6 +1,7 @@
 let Catalogue = {
   productcards: function(productname){
     this.listproduct(productname);
+    this.compareselect();
   },
   listproduct: function(productname){
     switch (productname){
@@ -55,29 +56,16 @@ let Catalogue = {
     }
   let getInterface= document.querySelector(".interface");
   getInterface.innerHTML = '<h3><a href="index.html">Back</a></h3><img src="img/guitars/'+ productname.toLowerCase()
-   +'.png" class="imagescan"><div><h3>'+ productname +'</h3><div class="row mt-2 py-3 px-2 bg-secondary" id="swtwala"><div  class="col-sm-3 mx-2 my-1" style="background-color:lavender;"><h4>SweetWater<button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.compareselect(1)">Add for comparison</button></h4><img src="img/guitars/Sweetwater/'+ productname.toLowerCase()
+   +'.png" class="imagescan"><div><h3>'+ productname +'</h3><div class="row mt-2 py-3 px-2 bg-secondary" id="swtwala"><div  class="col-sm-3 mx-2 my-1" style="background-color:lavender;"><h4>SweetWater</h4><img src="img/guitars/Sweetwater/'+ productname.toLowerCase()
     +'.png" class="imagessub"><div class="sellersub"><p> <b>Sweetwater Price:</b> $'+
-   swtproduct.price+'</p><p><b>Color: </b>'+swtproduct.color+'</p></div></div><div class="col-sm-3 mx-2 my-1" style="background-color:lavender;"><h4>Reverb<button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.compareselect(2)">Add for comparison</button></h4><img src="img/guitars/Reverb/'+ productname.toLowerCase()
+   swtproduct.price+'</p><p><b>Color: </b>'+swtproduct.color+'</p></div></div><div class="col-sm-3 mx-2 my-1" style="background-color:lavender;"><h4>Reverb</h4><img src="img/guitars/Reverb/'+ productname.toLowerCase()
     +'.png" class="imagessub"><p><b> Reverb Price:</b> $'+
-   rebproduct.price+'</p><p><b>Color: </b>'+rebproduct.color+'</p></div><div class="col-sm-3 mx-2 my-1" style="background-color:lavender;"><h4>Manny<button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.compareselect(3)">Add for comparison</button></h4><img src="img/guitars/Manny/'+ productname.toLowerCase()
+   rebproduct.price+'</p><p><b>Color: </b>'+rebproduct.color+'</p></div><div class="col-sm-3 mx-2 my-1" style="background-color:lavender;"><h4>Manny</h4><img src="img/guitars/Manny/'+ productname.toLowerCase()
     +'.png" class="imagessub"><p> <b>Manny Price:</b> $'+
-   manproduct.price+'</p><p><b>Color: </b>'+manproduct.color+'</p></div></div>';
+   manproduct.price+'</p><p><b>Color: </b>'+manproduct.color+'</p></div></div><button id="toggle">Compare</button>';
 
   },
-  compareselect: function(seller){
-    let getChecked= document.querySelector(".added");
-    let list=document.querySelector("#mylist");
-    switch(seller){
-      case 1:
-       list.appendChild(swtproduct.color);
-      break;
-      case 2:
-       getChecked.innerHTML='<p>'+rebproduct.color+'</p><button id="toggle">Compare</button>';
-      break;
-      case 3:
-       getChecked.innerHTML='<p>'+manproduct.color+'</p><button id="toggle">Compare</button>';
-      break;
+  compareselect: function(){
 
-   }
   }
 }

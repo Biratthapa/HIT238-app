@@ -1,9 +1,8 @@
+const hello = document.querySelector('#swtwala');
+const toggle= document.querySelector('#toggle');
 
-if ('serviceWorker' in navigator){
-  window.addEventListener('load',() =>{
-    navigator.serviceWorker
-    .register('../sw_cached_pages.js')
-    .then(reg => console.log('Service Worker: Registered'))
-    .catch(err => console.log('Service Worker: Error:'+err));
-  });
+
+toggle.addEventListener('click', changecor);
+function changecor(){
+    hello.classlist.toggle('.col-sm-3 mx-2 my-1 bg-secondary');
 }
