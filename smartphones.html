@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel="manifest" href="/manifest.json">
         <script src="js/catalogue.js"></script>
         <script src="js/product.js"></script>
         <script src="js/serviceworker.js"></script>
@@ -18,86 +19,47 @@
     <body>
 
       <div class="header"><h1>Compare Price</h1></div>
-      <div class="interface">
+      <div class="interfacep">
       <a href="index.html"><h2>Back</h2></a>
       <div class="container">
 
-      	<div class="row mt-2 pb-3">
+
           <div class="col-sm-4 ml-md-auto">
-            <img src="img/guitars/samsung galaxy s10.png" alt="Samsung Galaxy s10">
+            <img src="img/electronics/samsung s10.png" alt="samsung s10">
               <div class="card-body">
-              <h4 class="card-title text-center text-info">Samsung Galaxy s10</h4>
+              <h4 class="card-title text-center text-info">samsung s10</h4>
             </div>
            <div class="card-body">
 
-              <button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.productcards('Samsung Galaxy s10')">Check Prices</button>
-            </div>
-          </div>
-          <div class="col-sm-4 ml-md-auto">
-            <img src="img/guitars/fender stratocaster.png" alt="fender stratocaster">
-              <div class="card-body">
-              <h4 class="card-title text-center text-info">Fender Stratocaster</h4>
-            </div>
-           <div class="card-body">
-
-              <button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.productcards('Fender Stratocaster')">Check Prices</button>
+              <button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.productcardsp('Samsung s10')">Check Prices</button>
             </div>
           </div>
 
 
           <div class="col-sm-4 ml-md-auto">
-          <img src="img/guitars/prs se custom.png" alt="PRS SE">
+          <img src="img/electronics/iphone x.png" alt="IphoneX">
             <div class="card-body">
-            <h4 class="card-title text-center text-info">PRS SE custom</h4>
+            <h4 class="card-title text-center text-info">IPhone x</h4>
           </div>
           <div class="card-body">
 
-            <button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.productcards('PRS')">Check Prices</button>
+            <button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.productcardsp('Iphone X')">Check Prices</button>
           </div>
         </div>
       </div>
 
      <div class="row mt-2 pb-3">
            <div class="col-sm-4 ml-md-auto">
-           <img src="img/guitars/schecter.png" alt="schecter">
+           <img src="img/electronics/huawei.png" alt="huawei">
              <div class="card-body">
-             <h4 class="card-title text-center text-info">Schecter</h4>
+             <h4 class="card-title text-center text-info">Huawei</h4>
            </div>
           <div class="card-body">
 
-            <button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.productcards('schecter')">Check Prices</button>
+            <button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.productcardsp('Huawei')">Check Prices</button>
           </div>
         </div>
-        <div class="col-sm-4 ml-md-auto">
-        <img src="img/guitars/jackson.png" alt="jackson">
-          <div class="card-body">
-            <h4 class="card-title text-center text-info">Jackson</h4>
-           </div>
-          <div class="card-body">
 
-             <button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.productcards('Jackson')">Check Prices</button>
-           </div>
-        </div>
-        <div class="col-sm-4 ml-md-auto">
-        <img src="img/guitars/strandberg.png" alt="Strandberg">
-          <div class="card-body">
-            <h4 class="card-title text-center text-info">Strandberg</h4>
-           </div>
-          <div class="card-body">
-
-             <button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.productcards('Strandberg')">Check Prices</button>
-           </div>
-        </div>
-        <div class="col-sm-4 ml-md-auto">
-        <img src="img/guitars/gibson.png" alt="Gibson">
-          <div class="card-body">
-            <h4 class="card-title text-center text-info">Gibson</h4>
-           </div>
-          <div class="card-body">
-
-             <button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.productcards('Gibson')">Check Prices</button>
-           </div>
-        </div>
 
 
         </div>

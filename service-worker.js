@@ -1,10 +1,11 @@
-var cacheName = 'v1';
+var cacheName = 'v2';
 var cacheFiles=[
   './',
   './index.html',
   './style.css',
   './guitars.html',
   './laptop.html',
+  './smartphones.html'
   './js/catalogue.js',
   './js/product.js',
   './js/test.js',
@@ -24,6 +25,17 @@ self.addEventListener('install', function(e) {
 
 self.addEventListener('activate', function(e) {
   console.log('Service Worker:Activated');
+  e.waitUntil(
+
+    caches.keys().then(function(cacheNames){
+       return Promise.all(cacheNames.map(function(thisCacheName){
+         if (thisCacheName !== cacheName) {
+           console.log("[ServiceWorker] Removing Cached Files from", thisCacheName);
+           return caches.delete(thisCacheName);
+         }
+       }))
+    })
+  )
 })
 
 self.addEventListener('fetch', function(e) {

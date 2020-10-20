@@ -1,9 +1,9 @@
 
 let Catalogue = {
-  productcards: function(productname){
-    this.listproduct(productname);
+  productcardsg: function(productname){
+    this.listproductg(productname);
   },
-  listproduct: function(productname){
+  listproductg: function(productname){
     switch (productname){
       case "Yamaha Pacifica":
        product = new Product(productname ,"yamaha");
@@ -47,15 +47,11 @@ let Catalogue = {
         rebproduct= new SellerProduct(productname, "Gibson", "2020", 2200, "white");
         manproduct= new SellerProduct(productname, "Gibson", "2019", 2000, "brown");
       break;
-      case "Samsung Galaxy s10":
-        product = new Product(productname , "Samsung Galaxy s10");
-        swtproduct= new SellerProduct(productname, "Samsung Galaxy s10", "2019", 990, "white");
-        rebproduct= new SellerProduct(productname, "Samsung Galaxy s10", "2020", 1000, "blackk");
-        manproduct= new SellerProduct(productname, "Samsung Galaxy s10", "2020", 1100, "black");
-      break;
+
+
     }
-  let getInterface= document.querySelector(".interface");
-  getInterface.innerHTML = '<h3><a href="index.html">Back</a></h3><img src="img/guitars/'+ productname.toLowerCase()
+  let getInterfaceg= document.querySelector(".interfaceg");
+  getInterfaceg.innerHTML = '<h3><a href="index.html">Back</a></h3><img src="img/guitars/'+ productname.toLowerCase()
    +'.png" class="imagescan"><div><h3>'+ productname +'</h3><div class="row mt-2 py-3 px-2 bg-secondary" id="swtwala"><div  class="col-sm-3 mx-2 my-1" style="background-color:lavender;"><h4>SweetWater<button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.compareselect(1)">Add for comparison</button></h4><img src="img/guitars/Sweetwater/'+ productname.toLowerCase()
     +'.png" class="imagessub"><div class="sellersub"><p> <b>Sweetwater Price:</b> $'+
    swtproduct.price+'</p><p><b>Color: </b>'+swtproduct.color+'</p></div></div><div class="col-sm-3 mx-2 my-1" style="background-color:lavender;"><h4>Reverb<button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.compareselect(2)">Add for comparison</button></h4><img src="img/guitars/Reverb/'+ productname.toLowerCase()
@@ -64,7 +60,43 @@ let Catalogue = {
     +'.png" class="imagessub"><p> <b>Manny Price:</b> $'+
    manproduct.price+'</p><p><b>Color: </b>'+manproduct.color+'</p></div></div>';
 
+
+
+
+
   },
+  productcardsp: function(productname){
+    this.listproductp(productname);
+  },
+  listproductp: function(productname){
+    switch (productname){
+      case "Samsung s10":
+        product = new Product(productname , "Samsung s10");
+        ebayproduct= new SellerProduct(productname, "Samsung s10", "2019", 990, "white");
+        amazonproduct= new SellerProduct(productname, "Samsung s10", "2020", 1000, "blackk");
+        optusproduct= new SellerProduct(productname, "Samsung s10", "2020", 1100, "black");
+      break;
+      case "Iphone X":
+        product = new Product(productname , "Iphone X");
+        ebayproduct= new SellerProduct(productname, "Iphone X", "2019", 990, "white");
+        amazonproduct= new SellerProduct(productname, "Iphone X", "2020", 1000, "blackk");
+        optusproduct= new SellerProduct(productname, "Iphone X", "2020", 1100, "black");
+      break;
+    }
+    let getinterfacep= document.querySelector(".interfacep");
+    getinterfacep.innerHTML = '<h3><a href="index.html">Back</a></h3><img src="img/electronics/'+ productname.toLowerCase()
+     +'.png" class="imagescan"><div><h3>'+ productname +'</h3><div class="row mt-2 py-3 px-2 bg-secondary" id="swtwala"><div  class="col-sm-3 mx-2 my-1" style="background-color:lavender;"><h4>SweetWater<button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.compareselect(1)">Add for comparison</button></h4><img src="img/electronics/ebay/'+ productname.toLowerCase()
+      +'.png" class="imagessub"><div class="sellersub"><p> <b>Ebay Price:</b> $'+
+     ebayproduct.price+'</p><p><b>Color: </b>'+ebayproduct.color+'</p></div></div><div class="col-sm-3 mx-2 my-1" style="background-color:lavender;"><h4>Reverb<button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.compareselect(2)">Add for comparison</button></h4><img src="img/electronics/amazon/'+ productname.toLowerCase()
+      +'.png" class="imagessub"><p><b> Amazon Price:</b> $'+
+     amazonproduct.price+'</p><p><b>Color: </b>'+amazonproduct.color+'</p></div><div class="col-sm-3 mx-2 my-1" style="background-color:lavender;"><h4>Manny<button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.compareselect(3)">Add for comparison</button></h4><img src="img/electronics/optus/'+ productname.toLowerCase()
+      +'.png" class="imagessub"><p> <b>Optus Price:</b> $'+
+     optusproduct.price+'</p><p><b>Color: </b>'+optusproduct.color+'</p></div></div>';
+
+
+  },
+
+
   compareselect: function(seller){
     let getChecked= document.querySelector(".added");
     let list=document.querySelector("#mylist");
