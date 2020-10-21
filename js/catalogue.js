@@ -7,45 +7,45 @@ let Catalogue = {
     switch (productname){
       case "Yamaha Pacifica":
        product = new Product(productname ,"yamaha");
-       swtproduct= new SellerProduct(productname, "yamaha", "1997", 210, "blue");
-       rebproduct= new SellerProduct(productname, "yamaha", "1999", 490, "red");
-       manproduct= new SellerProduct(productname, "yamaha", "2000", 400, "black");
+       swtproduct= new SellerProduct(productname, "yamaha", "1997", 210, "blue","SweetWater");
+       rebproduct= new SellerProduct(productname, "yamaha", "1999", 490, "red", "Reverb");
+       manproduct= new SellerProduct(productname, "yamaha", "2000", 400, "black","Manny");
       break;
       case "Fender Stratocaster":
        product = new Product(productname, "fender");
-       swtproduct= new SellerProduct(productname, "fender", "1997", 800, "red");
-       rebproduct= new SellerProduct(productname, "fender", "1997", 790, "white");
-       manproduct= new SellerProduct(productname, "fender", "1997", 1200, "red");
+       swtproduct= new SellerProduct(productname, "fender", "1997", 800, "red","SweetWater");
+       rebproduct= new SellerProduct(productname, "fender", "1997", 790, "white","Reverb");
+       manproduct= new SellerProduct(productname, "fender", "1997", 1200, "red","Manny");
       break;
       case "PRS SE custom":
         product = new Product(productname , "PRS");
-        swtproduct= new SellerProduct(productname, "prs", "1997", 670, "blue");
-        rebproduct= new SellerProduct(productname, "prs", "1997", 650, "blue");
-        manproduct= new SellerProduct(productname, "prs", "1997", 600, "purple");
+        swtproduct= new SellerProduct(productname, "prs", "1997", 670, "blue","SweetWater");
+        rebproduct= new SellerProduct(productname, "prs", "1997", 650, "blue","Reverb");
+        manproduct= new SellerProduct(productname, "prs", "1997", 600, "purple","Manny");
       break;
       case "schecter":
         product = new Product(productname , "schecter");
-        swtproduct= new SellerProduct(productname, "schecter", "2015", 900, "black");
-        rebproduct= new SellerProduct(productname, "schecter", "2009", 650, "gold");
-        manproduct= new SellerProduct(productname, "schecter", "2011", 750, "red");
+        swtproduct= new SellerProduct(productname, "schecter", "2015", 900, "black","SweetWater");
+        rebproduct= new SellerProduct(productname, "schecter", "2009", 650, "gold","Reverb");
+        manproduct= new SellerProduct(productname, "schecter", "2011", 750, "red","Manny");
       break;
       case "Jackson":
         product = new Product(productname , "Jackson");
-        swtproduct= new SellerProduct(productname, "Jackson", "1999", 1320, "red");
-        rebproduct= new SellerProduct(productname, "Jackson", "2012", 1200, "purple");
-        manproduct= new SellerProduct(productname, "Jackson", "2011", 1100, "black");
+        swtproduct= new SellerProduct(productname, "Jackson", "1999", 1320, "red","SweetWater");
+        rebproduct= new SellerProduct(productname, "Jackson", "2012", 1200, "purple","Reverb","SweetWater");
+        manproduct= new SellerProduct(productname, "Jackson", "2011", 1100, "black","Manny");
       break;
       case "Strandberg":
         product = new Product(productname , "Strandberg");
-        swtproduct= new SellerProduct(productname, "Strandberg", "2018", 2320, "white");
-        rebproduct= new SellerProduct(productname, "Strandberg", "2020", 2200, "white");
-        manproduct= new SellerProduct(productname, "Strandberg", "2019", 2000, "brown");
+        swtproduct= new SellerProduct(productname, "Strandberg", "2018", 2320, "white","SweetWater");
+        rebproduct= new SellerProduct(productname, "Strandberg", "2020", 2200, "white","Reverb");
+        manproduct= new SellerProduct(productname, "Strandberg", "2019", 2000, "brown","Manny");
       break;
       case "Gibson":
         product = new Product(productname , "Gibson");
-        swtproduct= new SellerProduct(productname, "Gibson", "2018", 2320, "white");
-        rebproduct= new SellerProduct(productname, "Gibson", "2020", 2200, "white");
-        manproduct= new SellerProduct(productname, "Gibson", "2019", 2000, "brown");
+        swtproduct= new SellerProduct(productname, "Gibson", "2018", 2320, "white","SweetWater");
+        rebproduct= new SellerProduct(productname, "Gibson", "2020", 2200, "white","Reverb");
+        manproduct= new SellerProduct(productname, "Gibson", "2019", 2000, "brown","Manny");
       break;
 
 
@@ -102,13 +102,13 @@ let Catalogue = {
     let list=document.querySelector("#mylist");
     switch(seller){
       case 1:
-       list.appendChild(swtproduct.color);
+       list.appendChild(swtproduct.seller);
       break;
       case 2:
-       getChecked.innerHTML='<p>'+rebproduct.color+'</p><button id="toggle">Compare</button>';
+       getChecked.innerHTML='<p>'+rebproduct.seller+'</p><button id="toggle">Compare</button>';
       break;
       case 3:
-       getChecked.innerHTML='<p>'+manproduct.color+'</p><button id="toggle">Compare</button>';
+       getChecked.innerHTML='<p>'+manproduct.seller+'</p><button id="toggle">Compare</button>';
       break;
 
    }
