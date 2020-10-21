@@ -1,7 +1,7 @@
 {
   "name": "Price Comparison",
   "short_name": "Pricecomparison",
-  "start_url": "/index.html",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#FFE895",
   "theme_color": "#FFE1c4",
