@@ -27,15 +27,15 @@ self.addEventListener('activate', function(e) {
   console.log('Service Worker:Activated');
   e.waitUntil(
 
-    caches.keys().then(function(name){
+    caches.keys().then(function(names){
        Promise.all(
-         names.filter(function(cacheName){
+         names.filter(function(name){
            return name !== cacheName;
          }).map(function(name){
            return caches.delete(name);
          })
 
-       })
+       )
     })
   )
 });
