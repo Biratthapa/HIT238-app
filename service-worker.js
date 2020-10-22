@@ -5,7 +5,7 @@ var cacheFiles=[
   './style.css',
   './guitars.html',
   './laptop.html',
-  './smartphones.html'
+  './smartphones.html',
   './js/catalogue.js',
   './js/product.js',
   './js/test.js',
