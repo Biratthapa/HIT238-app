@@ -99,10 +99,9 @@ let Catalogue = {
 
   compareselect: function(seller){
     let getChecked= document.querySelector(".added");
-    let list=document.querySelector("#mylist");
     switch(seller){
       case 1:
-       list.appendChild(swtproduct.seller);
+       newListItem.textContent=swtproduct.seller;
       break;
       case 2:
        getChecked.innerHTML='<p>'+rebproduct.seller+'</p><button id="toggle">Compare</button>';
@@ -110,6 +109,7 @@ let Catalogue = {
       case 3:
        getChecked.innerHTML='<p>'+manproduct.seller+'</p><button id="toggle">Compare</button>';
       break;
+     
 
    }
   }

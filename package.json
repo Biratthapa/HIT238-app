@@ -2,7 +2,7 @@
   "name": "hit238-app",
   "version": "1.0.0",
   "description": "",
-  "main": "sw_cached_pages.js",
+  "main": "service-worker.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
