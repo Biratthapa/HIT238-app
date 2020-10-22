@@ -41,10 +41,6 @@ self.addEventListener('activate', function(e) {
 });
 
 self.addEventListener('fetch', function(e) {
-  e.respondWith(
-    caches.open(cacheName).then(function(cache){
-      return cache.match(e.request);
-    })
-  );
+  
   console.log('Service Worker: fetching', e.request.url);
 });
