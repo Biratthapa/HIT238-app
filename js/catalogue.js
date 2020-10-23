@@ -97,20 +97,29 @@ let Catalogue = {
   },
 
 
-  compareselect: function(seller){
-    let getChecked= document.querySelector(".added");
-    switch(seller){
+  compareselect: function(sellerno){
+    let mylist= document.querySelector("#comp-list");
+    let row= document.createElement('tr');
+    switch(sellerno){
       case 1:
-       newListItem.textContent=swtproduct.seller;
+       row.innerHTML='<td>'+swtproduct.seller+'</td><td>'+swtproduct.price+'</td>';
+       mylist.appendChild(row);
       break;
       case 2:
-       getChecked.innerHTML='<p>'+rebproduct.seller+'</p><button id="toggle">Compare</button>';
+       row.innerHTML='<td>'+rebproduct.seller+'</td><td>'+rebproduct.price+'</td>';
+       mylist.appendChild(row);
       break;
       case 3:
-       getChecked.innerHTML='<p>'+manproduct.seller+'</p><button id="toggle">Compare</button>';
+       row.innerHTML='<td>'+manproduct.seller+'</td><td>'+manproduct.price+'</td>';
+       mylist.appendChild(row);
       break;
-     
+
+
 
    }
-  }
+ },
+   fullcompare: function(){
+     let getinterfacef=document.querySelector(".interfacef");
+     getinterfacef.innerHTML='<p>why'+swtproduct.seller+'</p>';
+   }
 }

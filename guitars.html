@@ -20,7 +20,7 @@
     <body>
 
       <div class="header"><h1>Compare Price</h1></div>
-
+       <div class="interfacef">
       <div class="interfaceg">
       <a href="index.html"><h2>Back</h2></a>
       <div class="container">
@@ -108,13 +108,22 @@
       </div>
     </div>
     <div class="added">
-      <ul id="mylist">
-        <li>Your products</li>
-        <li></li>
-        <li></li>
-        <li></li>
+      <table class="table table-striped mt-5">
+        <thead>
+          <tr>
+            <th>Seller</th>
+            <th>Price</th>
 
-      </ul>
+          </tr>
+        </thead>
+        <tbody id="comp-list">
+        </tbody>
+
+
+      </table>
+      <button id="toggle" onclick="Catalogue.fullcompare()">Compare</button>
+    </div>
+
     </div>
 
 

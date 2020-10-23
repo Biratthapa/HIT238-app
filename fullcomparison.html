@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Price comparison app</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel="manifest" href="manifest.json">
+        <script src="js/catalogue.js"></script>
+        <script src="js/product.js"></script>
+        <script src="js/test.js"></script>
+        <script src="service-worker.js"></script>
+
+
+    </head>
+    <body>
+
+      <div class="header"><h1>Compare Price</h1></div>
+
+      <div>
+        <div class="addedfull">
+          <table class="table table-striped mt-5">
+            <thead>
+              <tr>
+                <th></th>
+                <th>swtproduct.seller</th>
+                <th>rebproduct.seller</th>
+                <th>manproduct.seller</th>
+
+              </tr>
+            </thead>
+            <tbody id="full-comp">
+              <tr>
+                <td>Price</td>
+                <td>swtproduct.price</td>
+                <td>rebproduct.price</td>
+                <td>manproduct.price</td>
+                </tr>
+                <tr>
+                  <td>Manufacturer</td>
+                  <td>swtproduct.manufacturer</td>
+                  <td>rebproduct.manufacturer</td>
+                  <td>manproduct.manufacturer</td>
+                  </tr>
+            </tbody>
+
+
+          </table>
+
+        </div>
+      </div>
+
+
+
+
+
+
+    </body>
+</html>
