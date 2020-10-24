@@ -26,3 +26,9 @@ h1 {
 .container img{
   width : 150px;
 }
+.note {
+  float: left;
+}
+ul {
+  list-style: none;
+}
