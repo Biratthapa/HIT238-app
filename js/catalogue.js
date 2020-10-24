@@ -135,6 +135,7 @@ let Catalogue = {
     columnr.setAttribute('class','note');
     let columnm= document.createElement('div');
     columnm.setAttribute('class','note');
+    mero.innerHTML='<div class="note"><ul><li><b>Seller</b></li><li><b>Price<b/></li><li><b>Manufacturer</b></li><li><b>Date</b></li><li><b>Color</b></li><li><b>Condition</b></li><li><b>Description</b></li></ul></div>'
     if(mytable.rows.length == 1){
         return;
       }
@@ -142,24 +143,19 @@ let Catalogue = {
      var firstCol = mytable.rows[i].cells[0].innerHTML;
      if (firstCol == 1){
        columns.innerHTML='<div><ul><li>'+swtproduct.seller+'</li><li>$ '+swtproduct.price+'</li><li>'+swtproduct.manufacturer+'</li><li>'+swtproduct.date+'</li><li>'+swtproduct.color+'</li><li>'+swtproduct.condition+'</li><li>'+manproduct.descp+'</li></ul></div>';
+        mero.appendChild(columns);
      }
      if (firstCol== 2){
        columnr.innerHTML='<div><ul><li>'+rebproduct.seller+'</li><li>$ '+rebproduct.price+'</li><li>'+rebproduct.manufacturer+'</li><li>'+rebproduct.date+'</li><li>'+rebproduct.color+'</li><li>'+rebproduct.condition+'</li><li>'+manproduct.descp+'</li></ul></div>';
-
+        mero.appendChild(columnr);
      }
      if (firstCol== 3){
        columnm.innerHTML='<div><ul><li>'+manproduct.seller+'</li><li>$ '+manproduct.price+'</li><li>'+manproduct.manufacturer+'</li><li>'+manproduct.date+'</li><li>'+manproduct.color+'</li><li>'+manproduct.condition+'</li><li>'+manproduct.descp+'</li></ul></div>';
-
+          mero.appendChild(columnm);
      }
 
 
    }
-
-   mero.innerHTML='<div class="note"><ul><li><b>Seller</b></li><li><b>Price<b/></li><li><b>Manufacturer</b></li><li><b>Date</b></li><li><b>Color</b></li><li><b>Condition</b></li><li><b>Description</b></li></ul></div>'
-   mero.appendChild(columns);
-   mero.appendChild(columnr);
-   mero.appendChild(columnm);
-
 
 
 
