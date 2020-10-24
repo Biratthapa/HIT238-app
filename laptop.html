@@ -18,93 +18,73 @@
 
     </head>
     <body>
+      <div id="interfacef">
+       <div class="header"><h1>Compare Price</h1></div>
+       <div class="interfacep">
+       <a href="index.html"><h2>Back</h2></a>
+       <div class="container">
 
-      <div class="header"><h1>Compare Price</h1></div>
-      <div class="interfacep">
-      <a href="index.html"><h2>Back</h2></a>
-      <div class="container">
-
-      	<div class="row mt-2 pb-3">
-          <div class="col-sm-4 ml-md-auto">
-            <img src="img/guitars/yamaha pacifica.png" alt="Yamaha Pacifica">
-              <div class="card-body">
-              <h4 class="card-title text-center text-info">Yamaha Pacifica</h4>
-            </div>
-           <div class="card-body">
-
-              <button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.productcards('Yamaha Pacifica')">Check Prices</button>
-            </div>
-          </div>
-          <div class="col-sm-4 ml-md-auto">
-            <img src="img/guitars/fender stratocaster.png" alt="fender stratocaster">
-              <div class="card-body">
-              <h4 class="card-title text-center text-info">Fender Stratocaster</h4>
-            </div>
-           <div class="card-body">
-
-              <button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.productcards('Fender Stratocaster')">Check Prices</button>
-            </div>
-          </div>
-
-
-          <div class="col-sm-4 ml-md-auto">
-          <img src="img/guitars/prs se custom.png" alt="PRS SE">
-            <div class="card-body">
-            <h4 class="card-title text-center text-info">PRS SE custom</h4>
-          </div>
-          <div class="card-body">
-
-            <button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.productcards('PRS SE custom')">Check Prices</button>
-          </div>
-        </div>
-      </div>
-
-     <div class="row mt-2 pb-3">
+           <div class="row mt-2 pb-3">
            <div class="col-sm-4 ml-md-auto">
-           <img src="img/guitars/schecter.png" alt="schecter">
+             <img src="img/laptop/dell xps.png" alt="Dell XPS">
+               <div class="card-body">
+               <h4 class="card-title text-center text-info">Dell XPS</h4>
+             </div>
+            <div class="card-body">
+
+                 <a onclick="showme()"><button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.productcardsl('Dell XPS')">Check Prices</button></a>
+             </div>
+           </div>
+
+
+           <div class="col-sm-4 ml-md-auto">
+           <img src="img/laptop/macbook pro.png" alt="Macbook Pro">
              <div class="card-body">
-             <h4 class="card-title text-center text-info">Schecter</h4>
+             <h4 class="card-title text-center text-info">MacBook Pro</h4>
            </div>
-          <div class="card-body">
+           <div class="card-body">
 
-            <button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.productcards('schecter')">Check Prices</button>
-          </div>
-        </div>
-        <div class="col-sm-4 ml-md-auto">
-        <img src="img/guitars/jackson.png" alt="jackson">
-          <div class="card-body">
-            <h4 class="card-title text-center text-info">Jackson</h4>
+               <a onclick="showme()"><button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.productcardsl('MacBook Pro')">Check Prices</button></a>
            </div>
-          <div class="card-body">
-
-             <button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.productcards('Jackson')">Check Prices</button>
-           </div>
-        </div>
-        <div class="col-sm-4 ml-md-auto">
-        <img src="img/guitars/strandberg.png" alt="Strandberg">
-          <div class="card-body">
-            <h4 class="card-title text-center text-info">Strandberg</h4>
-           </div>
-          <div class="card-body">
-
-             <button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.productcards('Strandberg')">Check Prices</button>
-           </div>
-        </div>
-        <div class="col-sm-4 ml-md-auto">
-        <img src="img/guitars/gibson.png" alt="Gibson">
-          <div class="card-body">
-            <h4 class="card-title text-center text-info">Gibson</h4>
-           </div>
-          <div class="card-body">
-
-             <button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.productcards('Gibson')">Check Prices</button>
-           </div>
-        </div>
+         </div>
 
 
-        </div>
 
-      </div>
+            <div class="col-sm-4 ml-md-auto">
+            <img src="img/laptop/lenovo.png" alt="lenovo">
+              <div class="card-body">
+              <h4 class="card-title text-center text-info">Lenovo</h4>
+            </div>
+           <div class="card-body">
+
+               <a onclick="showme()"><button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.productcardsl('Lenovo')">Check Prices</button></a>
+           </div>
+         </div>
+
+
+
+         </div>
+
+       </div>
+     </div>
+       <div class="added">
+         <table class="merotable">
+           <thead>
+             <tr>
+               <th>Serial No</th>
+               <th>Seller</th>
+               <th>Price</th>
+
+             </tr>
+           </thead>
+           <tbody id="comp-list">
+           </tbody>
+
+
+         </table>
+         <a onclick="myFunction()"><button id="toggle" onclick="Catalogue.fullcomparep()">Compare</button></a>
+       </div>
+     </div>
 
 
     </body>
