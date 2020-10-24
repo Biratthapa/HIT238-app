@@ -20,10 +20,7 @@
     <body>
 
       <div class="header"><h1>Compare Price</h1></div>
-      <div class="mero">
-        <div><h1>fullcompare</h1></div>
-      </div>
-       <div class="interfacef">
+       <div id="interfacef">
       <div class="interfaceg">
       <a href="index.html"><h2>Back</h2></a>
       <div class="container">
@@ -36,7 +33,7 @@
             </div>
            <div class="card-body">
 
-              <button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.productcardsg('Yamaha Pacifica')">Check Prices</button>
+              <a onclick="showme()"><button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.productcardsg('Yamaha Pacifica')">Check Prices</button></a>
             </div>
           </div>
           <div class="col-sm-4 ml-md-auto">
@@ -46,7 +43,7 @@
             </div>
            <div class="card-body">
 
-              <button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.productcardsg('Fender Stratocaster')">Check Prices</button>
+              <a onclick="showme()"><button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.productcardsg('Fender Stratocaster')">Check Prices</button></a>
             </div>
           </div>
 
@@ -58,7 +55,7 @@
           </div>
           <div class="card-body">
 
-            <button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.productcardsg('PRS SE custom')">Check Prices</button>
+            <a onclick="showme()"><button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.productcardsg('PRS SE custom')">Check Prices</button></a>
           </div>
         </div>
       </div>
@@ -71,7 +68,7 @@
            </div>
           <div class="card-body">
 
-            <button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.productcardsg('schecter')">Check Prices</button>
+            <a onclick="showme()"><button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.productcardsg('schecter')">Check Prices</button></a>
           </div>
         </div>
         <div class="col-sm-4 ml-md-auto">
@@ -81,7 +78,7 @@
            </div>
           <div class="card-body">
 
-             <button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.productcardsg('Jackson')">Check Prices</button>
+             <a onclick="showme()"><button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.productcardsg('Jackson')">Check Prices</button></a>
            </div>
         </div>
         <div class="col-sm-4 ml-md-auto">
@@ -91,7 +88,7 @@
            </div>
           <div class="card-body">
 
-             <button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.productcardsg('Strandberg')">Check Prices</button>
+             <a onclick="showme()"><button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.productcardsg('Strandberg')">Check Prices</button></a>
            </div>
         </div>
         <div class="col-sm-4 ml-md-auto">
@@ -101,7 +98,7 @@
            </div>
           <div class="card-body">
 
-             <button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.productcardsg('Gibson')">Check Prices</button>
+             <a onclick="showme()"><button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.productcardsg('Gibson')">Check Prices</button></a>
            </div>
         </div>
 
@@ -125,7 +122,7 @@
 
 
       </table>
-      <button id="toggle" onclick="Catalogue.fullcompare()">Compare</button>
+      <a onclick="myFunction()"><button id="toggle" onclick="Catalogue.fullcompare()">Compare</button></a>
     </div>
 
     </div>

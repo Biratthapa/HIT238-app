@@ -51,7 +51,7 @@ let Catalogue = {
 
     }
   let getInterfaceg= document.querySelector(".interfaceg");
-  getInterfaceg.innerHTML = '<h3><a href="index.html">Back</a></h3><img src="img/guitars/'+ productname.toLowerCase()
+  getInterfaceg.innerHTML = '<h3><a href="guitars.html">Back</a></h3><img src="img/guitars/'+ productname.toLowerCase()
    +'.png" class="imagescan"><div><h3>'+ productname +'</h3><div class="row mt-2 py-3 px-2 bg-secondary" id="swtwala"><div  class="col-sm-3 mx-2 my-1" style="background-color:lavender;"><h4>SweetWater<button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.compareselect(1)">Add for comparison</button></h4><img src="img/guitars/Sweetwater/'+ productname.toLowerCase()
     +'.png" class="imagessub"><div class="sellersub"><p> <b>Sweetwater Price:</b> $'+
    swtproduct.price+'</p><p><b>Color: </b>'+swtproduct.color+'</p></div></div><div class="col-sm-3 mx-2 my-1" style="background-color:lavender;"><h4>Reverb<button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.compareselect(2)">Add for comparison</button></h4><img src="img/guitars/Reverb/'+ productname.toLowerCase()
@@ -84,7 +84,7 @@ let Catalogue = {
       break;
     }
     let getinterfacep= document.querySelector(".interfacep");
-    getinterfacep.innerHTML = '<h3><a href="index.html">Back</a></h3><img src="img/electronics/'+ productname.toLowerCase()
+    getinterfacep.innerHTML = '<h3><a href="smartphones.html">Back</a></h3><img src="img/electronics/'+ productname.toLowerCase()
      +'.png" class="imagescan"><div><h3>'+ productname +'</h3><div class="row mt-2 py-3 px-2 bg-secondary" id="swtwala"><div  class="col-sm-3 mx-2 my-1" style="background-color:lavender;"><h4>SweetWater<button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.compareselect(1)">Add for comparison</button></h4><img src="img/electronics/ebay/'+ productname.toLowerCase()
       +'.png" class="imagessub"><div class="sellersub"><p> <b>Ebay Price:</b> $'+
      ebayproduct.price+'</p><p><b>Color: </b>'+ebayproduct.color+'</p></div></div><div class="col-sm-3 mx-2 my-1" style="background-color:lavender;"><h4>Reverb<button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.compareselect(2)">Add for comparison</button></h4><img src="img/electronics/amazon/'+ productname.toLowerCase()
@@ -127,7 +127,7 @@ let Catalogue = {
    }
  },
   fullcompare: function(){
-    let mero= document.querySelector(".interfacef");
+    let mero= document.querySelector("#interfacef");
     let mytable= document.querySelector(".merotable");
     let columns= document.createElement('div');
     columns.setAttribute('class','note');
@@ -135,7 +135,7 @@ let Catalogue = {
     columnr.setAttribute('class','note');
     let columnm= document.createElement('div');
     columnm.setAttribute('class','note');
-    mero.innerHTML='<div class="note"><ul><li><b>Seller</b></li><li><b>Price<b/></li><li><b>Manufacturer</b></li><li><b>Date</b></li><li><b>Color</b></li><li><b>Condition</b></li><li><b>Description</b></li></ul></div>'
+    mero.innerHTML='<div><a href="guitars.html">Back</p></a></div><div class="note"><ul><li><b>Seller</b></li><li><b>Price<b/></li><li><b>Manufacturer</b></li><li><b>Date</b></li><li><b>Color</b></li><li><b>Condition</b></li><li><b>Description</b></li></ul></div>'
     if(mytable.rows.length == 1){
         return;
       }

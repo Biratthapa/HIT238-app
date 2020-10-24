@@ -9,3 +9,11 @@ if ('serviceWorker' in navigator){
      console.log("Service Worker Failed to register", err);
    })
 }
+function myFunction() {
+  var element = document.getElementById("interfacef");
+  element.classList.toggle("wrapper");
+}
+function showme(){
+  var e=document.querySelector(".added")
+  e.style.visibility= 'visible';
+}
