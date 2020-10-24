@@ -28,7 +28,20 @@ h1 {
 }
 .note {
   float: left;
+  width: 150px;
 }
 ul {
   list-style: none;
+}
+.interfacef{
+  display:flex;
+  overflow-x:scroll;
+}
+.interfacef ::-webkit-scrollbar{
+  width:0;
+}
+.interfacef .note{
+  min-width:110px;
+  height:140px;s
+
 }

@@ -6,11 +6,12 @@ function Product(productname, manufacturer) {
   this.manufacturer= manufacturer;
 }
 
-function SellerProduct(productname, manufacturer, date, price, color, seller, condition){
+function SellerProduct(productname, manufacturer, date, price, color, seller, condition, descp){
   Product.call(this, productname, manufacturer);
   this.date = date;
   this.price= price;
   this.color= color;
   this.seller= seller;
   this.condition= condition;
+  this.descp= descp;
 }

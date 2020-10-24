@@ -7,45 +7,45 @@ let Catalogue = {
     switch (productname){
       case "Yamaha Pacifica":
        product = new Product(productname ,"yamaha");
-       swtproduct= new SellerProduct(productname, "yamaha", "1997", 210, "blue","SweetWater","Brand New");
-       rebproduct= new SellerProduct(productname, "yamaha", "1999", 490, "red", "Reverb","Brand New");
-       manproduct= new SellerProduct(productname, "yamaha", "2000", 400, "black","Manny","Excellent");
+       swtproduct= new SellerProduct(productname, "yamaha", "1997", 210, "blue","SweetWater","Brand New","Yamaha Pacificas are beautiful guitars handcrafted and done");
+       rebproduct= new SellerProduct(productname, "yamaha", "1999", 490, "red", "Reverb","Brand New","eram multos labore duis quorum duis malis fore sint irure fore veniam elit multos quid");
+       manproduct= new SellerProduct(productname, "yamaha", "2000", 400, "black","Manny","Excellent","cillum velit irure sint quorum malis export culpa elit illum sint aliqua eramesse magna");
       break;
       case "Fender Stratocaster":
        product = new Product(productname, "fender");
-       swtproduct= new SellerProduct(productname, "fender", "1997", 800, "red","SweetWater","Poor");
-       rebproduct= new SellerProduct(productname, "fender", "1997", 790, "white","Reverb","Intact");
-       manproduct= new SellerProduct(productname, "fender", "1997", 1200, "red","Manny","Good");
+       swtproduct= new SellerProduct(productname, "fender", "1997", 800, "red","SweetWater","Poor","enim irure eram legam summis noster quorum velit legam anim sunt legam quem nisianim");
+       rebproduct= new SellerProduct(productname, "fender", "1997", 790, "white","Reverb","Intact","quae summis duis legam elit velit sint multos quid elit tamen cillum sunt fugiatenim");
+       manproduct= new SellerProduct(productname, "fender", "1997", 1200, "red","Manny","Good","anim illum quorum minim multos nisi aliqua duis multos noster enim noster nisidolore legam");
       break;
       case "PRS SE custom":
         product = new Product(productname , "PRS");
-        swtproduct= new SellerProduct(productname, "prs", "1997", 670, "blue","SweetWater","Good");
-        rebproduct= new SellerProduct(productname, "prs", "1997", 650, "blue","Reverb","Brand New");
-        manproduct= new SellerProduct(productname, "prs", "1997", 600, "purple","Manny","Excellent");
+        swtproduct= new SellerProduct(productname, "prs", "1997", 670, "blue","SweetWater","Good","magna nulla quorum labore dolor duis sunt fore sint quorum noster nulla quisfore");
+        rebproduct= new SellerProduct(productname, "prs", "1997", 650, "blue","Reverb","Brand New","sint amet fore nulla fugiat duis esse amet noster velit veniam anim sint ametquem");
+        manproduct= new SellerProduct(productname, "prs", "1997", 600, "purple","Manny","Excellent","quorum quis nulla aliqua veniam summis quis tempor sint duis nisi duis culpanulla sunt");
       break;
       case "schecter":
         product = new Product(productname , "schecter");
-        swtproduct= new SellerProduct(productname, "schecter", "2015", 900, "black","SweetWater","Broken Headstock");
-        rebproduct= new SellerProduct(productname, "schecter", "2009", 650, "gold","Reverb","Good");
-        manproduct= new SellerProduct(productname, "schecter", "2011", 750, "red","Manny", "Brandnew");
+        swtproduct= new SellerProduct(productname, "schecter", "2015", 900, "black","SweetWater","Broken Headstock","legam dolor noster aliqua sint multos multos quis noster culpa nisi tempor iruretempor quis");
+        rebproduct= new SellerProduct(productname, "schecter", "2009", 650, "gold","Reverb","Good","quorum quis aliqua export esse quem cillum fore veniam ipsum sunt fugiat malisnulla multos");
+        manproduct= new SellerProduct(productname, "schecter", "2011", 750, "red","Manny", "Brandnew","aute quae minim summis fore quae ipsum irure quem amet dolore aliqua magnaaliqua amet");
       break;
       case "Jackson":
         product = new Product(productname , "Jackson");
-        swtproduct= new SellerProduct(productname, "Jackson", "1999", 1320, "red","SweetWater","Brand New");
-        rebproduct= new SellerProduct(productname, "Jackson", "2012", 1200, "purple","Reverb","SweetWater","Brand New");
-        manproduct= new SellerProduct(productname, "Jackson", "2011", 1100, "black","Manny","Old rusty");
+        swtproduct= new SellerProduct(productname, "Jackson", "1999", 1320, "red","SweetWater","Brand New","dolore eram fugiat labore dolor enim summis minim ipsum enim quis quorum velitelit summis");
+        rebproduct= new SellerProduct(productname, "Jackson", "2012", 1200, "purple","Reverb","SweetWater","Brand New","fore esse amet dolore labore quid sunt malis esse quid duis export nulla summisquem");
+        manproduct= new SellerProduct(productname, "Jackson", "2011", 1100, "black","Manny","Old rusty","multos magna anim nisi summis sint sunt duis quid quid quid aliqua legam malisquem");
       break;
       case "Strandberg":
         product = new Product(productname , "Strandberg");
-        swtproduct= new SellerProduct(productname, "Strandberg", "2018", 2320, "white","SweetWater","Vintage rust");
-        rebproduct= new SellerProduct(productname, "Strandberg", "2020", 2200, "white","Reverb", "Excellent");
-        manproduct= new SellerProduct(productname, "Strandberg", "2019", 2000, "brown","Manny", "Untouched");
+        swtproduct= new SellerProduct(productname, "Strandberg", "2018", 2320, "white","SweetWater","Vintage rust","quorum quorum esse illum aliqua cillum sunt quorum amet sunt sint tempor quaelegam fugiat");
+        rebproduct= new SellerProduct(productname, "Strandberg", "2020", 2200, "white","Reverb", "Excellent","duis duis duis magna quid irure quid anim amet fugiat duis malis quis tamensummis");
+        manproduct= new SellerProduct(productname, "Strandberg", "2019", 2000, "brown","Manny", "Untouched","veniam amet irure export malis magna cillum magna dolor nisi amet tamen dolorequem elit");
       break;
       case "Gibson":
         product = new Product(productname , "Gibson");
-        swtproduct= new SellerProduct(productname, "Gibson", "2018", 2320, "white","SweetWater","Good");
-        rebproduct= new SellerProduct(productname, "Gibson", "2020", 2200, "white","Reverb","Brand New");
-        manproduct= new SellerProduct(productname, "Gibson", "2019", 2000, "brown","Manny","Good");
+        swtproduct= new SellerProduct(productname, "Gibson", "2018", 2320, "white","SweetWater","Good","Qwqwqwwqew");
+        rebproduct= new SellerProduct(productname, "Gibson", "2020", 2200, "white","Reverb","Brand New","enim velit magna nisi quid esse nisi duis sint irure tamen tamen cillum sintamet cillum eram irure aute multos");
+        manproduct= new SellerProduct(productname, "Gibson", "2019", 2000, "brown","Manny","Good","duis sunt dolore fore esse sint eram illum tempor duis irure culpa malis minimnulla tempor velit noster enim minim");
       break;
 
 
@@ -102,8 +102,8 @@ let Catalogue = {
 
     let mylist= document.querySelector("#comp-list");
     let i= mylist.rows.length;
-    if (i > 1) {
-            alert('no more than 2 items allowed');
+    if (i > 2) {
+            alert('no more than 3  items allowed');
             return
           }
 
@@ -135,22 +135,27 @@ let Catalogue = {
     columnr.setAttribute('class','note');
     let columnm= document.createElement('div');
     columnm.setAttribute('class','note');
+    if(mytable.rows.length == 1){
+        return;
+      }
     for (var i = 1; i < mytable.rows.length; i++) {
      var firstCol = mytable.rows[i].cells[0].innerHTML;
      if (firstCol == 1){
-       columns.innerHTML='<div><ul><li>'+swtproduct.seller+'</li><li>$ '+swtproduct.price+'</li><li>'+swtproduct.manufacturer+'</li><li>'+swtproduct.date+'</li><li>'+swtproduct.color+'</li><li>'+swtproduct.condition+'</li></ul></div>';
+       columns.innerHTML='<div><ul><li>'+swtproduct.seller+'</li><li>$ '+swtproduct.price+'</li><li>'+swtproduct.manufacturer+'</li><li>'+swtproduct.date+'</li><li>'+swtproduct.color+'</li><li>'+swtproduct.condition+'</li><li>'+manproduct.descp+'</li></ul></div>';
      }
      if (firstCol== 2){
-       columnr.innerHTML='<div><ul><li>'+rebproduct.seller+'</li><li>$ '+rebproduct.price+'</li><li>'+rebproduct.manufacturer+'</li><li>'+rebproduct.date+'</li><li>'+rebproduct.color+'</li><li>'+rebproduct.condition+'</li></ul></div>';
+       columnr.innerHTML='<div><ul><li>'+rebproduct.seller+'</li><li>$ '+rebproduct.price+'</li><li>'+rebproduct.manufacturer+'</li><li>'+rebproduct.date+'</li><li>'+rebproduct.color+'</li><li>'+rebproduct.condition+'</li><li>'+manproduct.descp+'</li></ul></div>';
 
      }
      if (firstCol== 3){
-       columnm.innerHTML='<div><ul><li>'+manproduct.seller+'</li><li>$ '+manproduct.price+'</li><li>'+manproduct.manufacturer+'</li><li>'+manproduct.date+'</li><li>'+manproduct.color+'</li><li>'+manproduct.condition+'</li></ul></div>';
+       columnm.innerHTML='<div><ul><li>'+manproduct.seller+'</li><li>$ '+manproduct.price+'</li><li>'+manproduct.manufacturer+'</li><li>'+manproduct.date+'</li><li>'+manproduct.color+'</li><li>'+manproduct.condition+'</li><li>'+manproduct.descp+'</li></ul></div>';
 
      }
 
+
    }
-   mero.innerHTML='<div class="note"><ul><li><b>Seller</b></li><li><b>Price<b/></li><li><b>Manufacturer</b></li><li><b>Date</b></li><li><b>Color</b></li><li><b>Condition</b></li></ul></div>'
+
+   mero.innerHTML='<div class="note"><ul><li><b>Seller</b></li><li><b>Price<b/></li><li><b>Manufacturer</b></li><li><b>Date</b></li><li><b>Color</b></li><li><b>Condition</b></li><li><b>Description</b></li></ul></div>'
    mero.appendChild(columns);
    mero.appendChild(columnr);
    mero.appendChild(columnm);
