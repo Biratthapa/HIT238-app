@@ -72,24 +72,24 @@ let Catalogue = {
     switch (productname){
       case "Samsung s10":
         product = new Product(productname , "Samsung s10");
-        ebayproduct= new SellerProduct(productname, "Samsung s10", "2019", 990, "white");
-        amazonproduct= new SellerProduct(productname, "Samsung s10", "2020", 1000, "blackk");
-        optusproduct= new SellerProduct(productname, "Samsung s10", "2020", 1100, "black");
+        ebayproduct= new SellerProduct(productname, "Samsung s10", "2019", 990, "white","ebay","Good","dolor summis velit fore aliqua illum export quorum enim quem elit quae eram fore cillum quid malis multos amet");
+        amazonproduct= new SellerProduct(productname, "Samsung s10", "2020", 1000, "blackk","ebay","Good","quid labore amet eram malis aliqua export malis quis sint esse quis summis elit quis malis veniam minim illum");
+        optusproduct= new SellerProduct(productname, "Samsung s10", "2020", 1100, "black","optus","Brand New","quem legam esse aliqua amet noster summis eram quorum ipsum multos summis quis anim tamen expoelit summis dolor quis");
       break;
       case "Iphone X":
         product = new Product(productname , "Iphone X");
-        ebayproduct= new SellerProduct(productname, "Iphone X", "2019", 990, "white");
-        amazonproduct= new SellerProduct(productname, "Iphone X", "2020", 1000, "blackk");
-        optusproduct= new SellerProduct(productname, "Iphone X", "2020", 1100, "black");
+        ebayproduct= new SellerProduct(productname, "Iphone X", "2019", 990, "white","ebay","Meh","esse aute amet sunt dolor dolor sunt eram multos quae quae labore summis tempor nulla irure elit dolore quid sunt");
+        amazonproduct= new SellerProduct(productname, "Iphone X", "2020", 1000, "blackk","amazon","Okay","cillum nisi dolor veniam minim anim export tamen aliqua legam sunt dolore aliqua malis labore magna eram labore dolor noster");
+        optusproduct= new SellerProduct(productname, "Iphone X", "2020", 1100, "black","optus","Crack On Side","malis aute quis multos sunt fore anim esse ipsum esse illum velit duis minim  esse nisi illum illum sunt quid");
       break;
     }
     let getinterfacep= document.querySelector(".interfacep");
     getinterfacep.innerHTML = '<h3><a href="smartphones.html">Back</a></h3><img src="img/electronics/'+ productname.toLowerCase()
-     +'.png" class="imagescan"><div><h3>'+ productname +'</h3><div class="row mt-2 py-3 px-2 bg-secondary" id="swtwala"><div  class="col-sm-3 mx-2 my-1" style="background-color:lavender;"><h4>SweetWater<button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.compareselect(1)">Add for comparison</button></h4><img src="img/electronics/ebay/'+ productname.toLowerCase()
+     +'.png" class="imagescan"><div><h3>'+ productname +'</h3><div class="row mt-2 py-3 px-2 bg-secondary" id="swtwala"><div  class="col-sm-3 mx-2 my-1" style="background-color:lavender;"><h4>SweetWater<button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.compareselectp(1)">Add for comparison</button></h4><img src="img/electronics/ebay/'+ productname.toLowerCase()
       +'.png" class="imagessub"><div class="sellersub"><p> <b>Ebay Price:</b> $'+
-     ebayproduct.price+'</p><p><b>Color: </b>'+ebayproduct.color+'</p></div></div><div class="col-sm-3 mx-2 my-1" style="background-color:lavender;"><h4>Reverb<button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.compareselect(2)">Add for comparison</button></h4><img src="img/electronics/amazon/'+ productname.toLowerCase()
+     ebayproduct.price+'</p><p><b>Color: </b>'+ebayproduct.color+'</p></div></div><div class="col-sm-3 mx-2 my-1" style="background-color:lavender;"><h4>Reverb<button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.compareselectp(2)">Add for comparison</button></h4><img src="img/electronics/amazon/'+ productname.toLowerCase()
       +'.png" class="imagessub"><p><b> Amazon Price:</b> $'+
-     amazonproduct.price+'</p><p><b>Color: </b>'+amazonproduct.color+'</p></div><div class="col-sm-3 mx-2 my-1" style="background-color:lavender;"><h4>Manny<button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.compareselect(3)">Add for comparison</button></h4><img src="img/electronics/optus/'+ productname.toLowerCase()
+     amazonproduct.price+'</p><p><b>Color: </b>'+amazonproduct.color+'</p></div><div class="col-sm-3 mx-2 my-1" style="background-color:lavender;"><h4>Manny<button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.compareselectp(3)">Add for comparison</button></h4><img src="img/electronics/optus/'+ productname.toLowerCase()
       +'.png" class="imagessub"><p> <b>Optus Price:</b> $'+
      optusproduct.price+'</p><p><b>Color: </b>'+optusproduct.color+'</p></div></div>';
 
@@ -125,7 +125,37 @@ let Catalogue = {
 
 
    }
+
  },
+ compareselectp: function(sellerno){
+
+  let mylist= document.querySelector("#comp-list");
+  let i= mylist.rows.length;
+  if (i > 2) {
+          alert('no more than 3  items allowed');
+          return
+        }
+
+  let row= document.createElement('tr');
+  switch(sellerno){
+    case 1:
+     row.innerHTML='<td>1</td><td>'+ebayproduct.seller+'</td><td>'+ebayproduct.price+'</td>';
+     mylist.appendChild(row);
+    break;
+    case 2:
+     row.innerHTML='<td>2</td><td>'+amazonproduct.seller+'</td><td>'+amazonproduct.price+'</td>';
+     mylist.appendChild(row);
+    break;
+    case 3:
+     row.innerHTML='<td>3</td><td>'+optusproduct.seller+'</td><td>'+optusproduct.price+'</td>';
+     mylist.appendChild(row);
+    break;
+
+
+
+ }
+
+},
   fullcompare: function(){
     let mero= document.querySelector("#interfacef");
     let mytable= document.querySelector(".merotable");
@@ -142,11 +172,11 @@ let Catalogue = {
     for (var i = 1; i < mytable.rows.length; i++) {
      var firstCol = mytable.rows[i].cells[0].innerHTML;
      if (firstCol == 1){
-       columns.innerHTML='<div><ul><li>'+swtproduct.seller+'</li><li>$ '+swtproduct.price+'</li><li>'+swtproduct.manufacturer+'</li><li>'+swtproduct.date+'</li><li>'+swtproduct.color+'</li><li>'+swtproduct.condition+'</li><li>'+manproduct.descp+'</li></ul></div>';
+       columns.innerHTML='<div><ul><li>'+swtproduct.seller+'</li><li>$ '+swtproduct.price+'</li><li>'+swtproduct.manufacturer+'</li><li>'+swtproduct.date+'</li><li>'+swtproduct.color+'</li><li>'+swtproduct.condition+'</li><li>'+swtproduct.descp+'</li></ul></div>';
         mero.appendChild(columns);
      }
      if (firstCol== 2){
-       columnr.innerHTML='<div><ul><li>'+rebproduct.seller+'</li><li>$ '+rebproduct.price+'</li><li>'+rebproduct.manufacturer+'</li><li>'+rebproduct.date+'</li><li>'+rebproduct.color+'</li><li>'+rebproduct.condition+'</li><li>'+manproduct.descp+'</li></ul></div>';
+       columnr.innerHTML='<div><ul><li>'+rebproduct.seller+'</li><li>$ '+rebproduct.price+'</li><li>'+rebproduct.manufacturer+'</li><li>'+rebproduct.date+'</li><li>'+rebproduct.color+'</li><li>'+rebproduct.condition+'</li><li>'+rebproduct.descp+'</li></ul></div>';
         mero.appendChild(columnr);
      }
      if (firstCol== 3){
@@ -160,5 +190,39 @@ let Catalogue = {
 
 
  },
+ fullcomparep: function(){
+   let mero= document.querySelector("#interfacef");
+   let mytable= document.querySelector(".merotable");
+   let columns= document.createElement('div');
+   columns.setAttribute('class','note');
+   let columnr= document.createElement('div');
+   columnr.setAttribute('class','note');
+   let columnm= document.createElement('div');
+   columnm.setAttribute('class','note');
+   mero.innerHTML='<div><a href="smartphones.html">Back</p></a></div><div class="note"><ul><li><b>Seller</b></li><li><b>Price<b/></li><li><b>Manufacturer</b></li><li><b>Date</b></li><li><b>Color</b></li><li><b>Condition</b></li><li><b>Description</b></li></ul></div>'
+   if(mytable.rows.length == 1){
+       return;
+     }
+   for (var i = 1; i < mytable.rows.length; i++) {
+    var firstCol = mytable.rows[i].cells[0].innerHTML;
+    if (firstCol == 1){
+      columns.innerHTML='<div><ul><li>'+ebayproduct.seller+'</li><li>$ '+ebayproduct.price+'</li><li>'+ebayproduct.manufacturer+'</li><li>'+ebayproduct.date+'</li><li>'+ebayproduct.color+'</li><li>'+ebayproduct.condition+'</li><li>'+ebayproduct.descp+'</li></ul></div>';
+       mero.appendChild(columns);
+    }
+    if (firstCol== 2){
+      columnr.innerHTML='<div><ul><li>'+amazonproduct.seller+'</li><li>$ '+amazonproduct.price+'</li><li>'+amazonproduct.manufacturer+'</li><li>'+amazonproduct.date+'</li><li>'+amazonproduct.color+'</li><li>'+amazonproduct.condition+'</li><li>'+amazonproduct.descp+'</li></ul></div>';
+       mero.appendChild(columnr);
+    }
+    if (firstCol== 3){
+      columnm.innerHTML='<div><ul><li>'+optusproduct.seller+'</li><li>$ '+optusproduct.price+'</li><li>'+optusproduct.manufacturer+'</li><li>'+optusproduct.date+'</li><li>'+optusproduct.color+'</li><li>'+optusproduct.condition+'</li><li>'+optusproduct.descp+'</li></ul></div>';
+         mero.appendChild(columnm);
+    }
+
+
+  }
+
+
+
+},
 
 }

@@ -18,7 +18,7 @@
 
     </head>
     <body>
-
+     <div id="interfacef">
       <div class="header"><h1>Compare Price</h1></div>
       <div class="interfacep">
       <a href="index.html"><h2>Back</h2></a>
@@ -32,7 +32,7 @@
             </div>
            <div class="card-body">
 
-              <button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.productcardsp('Samsung s10')">Check Prices</button>
+                <a onclick="showme()"><button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.productcardsp('Samsung s10')">Check Prices</button></a>
             </div>
           </div>
 
@@ -44,7 +44,7 @@
           </div>
           <div class="card-body">
 
-            <button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.productcardsp('Iphone X')">Check Prices</button>
+              <a onclick="showme()"><button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.productcardsp('Iphone X')">Check Prices</button></a>
           </div>
         </div>
       </div>
@@ -57,7 +57,7 @@
            </div>
           <div class="card-body">
 
-            <button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.productcardsp('Huawei')">Check Prices</button>
+              <a onclick="showme()"><button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.productcardsp('Huawei')">Check Prices</button></a>
           </div>
         </div>
 
@@ -66,7 +66,24 @@
         </div>
 
       </div>
+      <div class="added">
+        <table class="merotable">
+          <thead>
+            <tr>
+              <th>Serial No</th>
+              <th>Seller</th>
+              <th>Price</th>
 
+            </tr>
+          </thead>
+          <tbody id="comp-list">
+          </tbody>
+
+
+        </table>
+        <a onclick="myFunction()"><button id="toggle" onclick="Catalogue.fullcomparep()">Compare</button></a>
+      </div>
+    </div>
 
     </body>
 </html>
