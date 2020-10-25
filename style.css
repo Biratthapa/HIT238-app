@@ -10,6 +10,17 @@
 .imagessub{
   width: 50px;
 }
+.imageslod{
+  width:150px;
+  height: 150px;
+  transition: transform ease-in-out 0.3s;
+}
+.imageslod:hover{
+  transform: scale(3);
+}
+.imageko{
+  margin-bottom: 140px;
+}
 .productseller{
   background: #f0e9e6;
 }
@@ -95,4 +106,7 @@ ul li{
 .merotable tbody tr.active-row {
   font-weight: bold;
   color: #009879;
+}
+#interfacef {
+  margin-top: 50px;
 }

@@ -52,11 +52,11 @@ let Catalogue = {
     }
   let getInterfaceg= document.querySelector(".interfaceg");
   getInterfaceg.innerHTML = '<h3><a href="guitars.html">Back</a></h3><img src="img/guitars/'+ productname.toLowerCase()
-   +'.png" class="imagescan"><div><h3>'+ productname +'</h3><div class="row mt-2 py-3 px-2 bg-secondary" id="swtwala"><div  class="col-sm-3 mx-2 my-1" style="background-color:lavender;"><h4>SweetWater<button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.compareselect(1)">Add for comparison</button></h4><img src="img/guitars/Sweetwater/'+ productname.toLowerCase()
+   +'.png" class="imagescan"><div><h3>'+ productname +'</h3><div class="row mt-2 py-3 px-2 bg-secondary" id="swtwala"><div  id="xoras" class="col-sm-3 mx-2 my-1" style="background-color:lavender;"><h4>SweetWater<a onclick="xoraskocolor()"><button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.compareselect(1)">Add for comparison</button></a></h4><img src="img/guitars/Sweetwater/'+ productname.toLowerCase()
     +'.png" class="imagessub"><div class="sellersub"><p> <b>Sweetwater Price:</b> $'+
-   swtproduct.price+'</p><p><b>Color: </b>'+swtproduct.color+'</p></div></div><div class="col-sm-3 mx-2 my-1" style="background-color:lavender;"><h4>Reverb<button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.compareselect(2)">Add for comparison</button></h4><img src="img/guitars/Reverb/'+ productname.toLowerCase()
+   swtproduct.price+'</p><p><b>Color: </b>'+swtproduct.color+'</p></div></div><div id="xorar" class="col-sm-3 mx-2 my-1" style="background-color:lavender;"><h4>Reverb<a onclick="xorarkocolor()"><button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.compareselect(2)">Add for comparison</button></a></h4><img src="img/guitars/Reverb/'+ productname.toLowerCase()
     +'.png" class="imagessub"><p><b> Reverb Price:</b> $'+
-   rebproduct.price+'</p><p><b>Color: </b>'+rebproduct.color+'</p></div><div class="col-sm-3 mx-2 my-1" style="background-color:lavender;"><h4>Manny<button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.compareselect(3)">Add for comparison</button></h4><img src="img/guitars/Manny/'+ productname.toLowerCase()
+   rebproduct.price+'</p><p><b>Color: </b>'+rebproduct.color+'</p></div><div id="xoram" class="col-sm-3 mx-2 my-1" style="background-color:lavender;"><h4>Manny<a onclick="xoramkocolor()"><button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.compareselect(3)">Add for comparison</button></a></h4><img src="img/guitars/Manny/'+ productname.toLowerCase()
     +'.png" class="imagessub"><p> <b>Manny Price:</b> $'+
    manproduct.price+'</p><p><b>Color: </b>'+manproduct.color+'</p></div></div>';
 
@@ -73,7 +73,7 @@ let Catalogue = {
       case "Samsung s10":
         product = new Product(productname , "Samsung s10");
         ebayproduct= new SellerProduct(productname, "Samsung s10", "2019", 990, "white","ebay","Good","dolor summis velit fore aliqua illum export quorum enim quem elit quae eram fore cillum quid malis multos amet");
-        amazonproduct= new SellerProduct(productname, "Samsung s10", "2020", 1000, "blackk","ebay","Good","quid labore amet eram malis aliqua export malis quis sint esse quis summis elit quis malis veniam minim illum");
+        amazonproduct= new SellerProduct(productname, "Samsung s10", "2020", 1000, "blackk","amazon","Good","quid labore amet eram malis aliqua export malis quis sint esse quis summis elit quis malis veniam minim illum");
         optusproduct= new SellerProduct(productname, "Samsung s10", "2020", 1100, "black","optus","Brand New","quem legam esse aliqua amet noster summis eram quorum ipsum multos summis quis anim tamen expoelit summis dolor quis");
       break;
       case "Iphone X":
@@ -92,11 +92,11 @@ let Catalogue = {
     }
     let getinterfacep= document.querySelector(".interfacep");
     getinterfacep.innerHTML = '<h3><a href="smartphones.html">Back</a></h3><img src="img/electronics/'+ productname.toLowerCase()
-     +'.png" class="imagescan"><div><h3>'+ productname +'</h3><div class="row mt-2 py-3 px-2 bg-secondary" id="swtwala"><div  class="col-sm-3 mx-2 my-1" style="background-color:lavender;"><h4>SweetWater<button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.compareselectp(1)">Add for comparison</button></h4><img src="img/electronics/ebay/'+ productname.toLowerCase()
+     +'.png" class="imagescan"><div><h3>'+ productname +'</h3><div class="row mt-2 py-3 px-2 bg-secondary" id="swtwala"><div  id="xorae" class="col-sm-3 mx-2 my-1" style="background-color:lavender;"><h4>Ebay<a onclick="xoraekocolor()"><button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.compareselectp(1)">Add for comparison</button></a></h4><img src="img/electronics/ebay/'+ productname.toLowerCase()
       +'.png" class="imagessub"><div class="sellersub"><p> <b>Ebay Price:</b> $'+
-     ebayproduct.price+'</p><p><b>Color: </b>'+ebayproduct.color+'</p></div></div><div class="col-sm-3 mx-2 my-1" style="background-color:lavender;"><h4>Reverb<button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.compareselectp(2)">Add for comparison</button></h4><img src="img/electronics/amazon/'+ productname.toLowerCase()
+     ebayproduct.price+'</p><p><b>Color: </b>'+ebayproduct.color+'</p></div></div><div id="xoraa" class="col-sm-3 mx-2 my-1" style="background-color:lavender;"><h4>Amazon<a onclick="xoraakocolor()"><button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.compareselectp(2)">Add for comparison</button></a></h4><img src="img/electronics/amazon/'+ productname.toLowerCase()
       +'.png" class="imagessub"><p><b> Amazon Price:</b> $'+
-     amazonproduct.price+'</p><p><b>Color: </b>'+amazonproduct.color+'</p></div><div class="col-sm-3 mx-2 my-1" style="background-color:lavender;"><h4>Manny<button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.compareselectp(3)">Add for comparison</button></h4><img src="img/electronics/optus/'+ productname.toLowerCase()
+     amazonproduct.price+'</p><p><b>Color: </b>'+amazonproduct.color+'</p></div><div id="xorao" class="col-sm-3 mx-2 my-1" style="background-color:lavender;"><h4>Optus<a onclick="xoraokocolor()"><button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.compareselectp(3)">Add for comparison</button></a></h4><img src="img/electronics/optus/'+ productname.toLowerCase()
       +'.png" class="imagessub"><p> <b>Optus Price:</b> $'+
      optusproduct.price+'</p><p><b>Color: </b>'+optusproduct.color+'</p></div></div>';
 
@@ -110,7 +110,7 @@ let Catalogue = {
       case "Dell XPS":
         product = new Product(productname , "Dell");
         ebayproduct= new SellerProduct(productname, "Dell", "2019", 990, "white","ebay","Good","dolor summis velit fore aliqua illum export quorum enim quem elit quae eram fore cillum quid malis multos amet");
-        amazonproduct= new SellerProduct(productname, "Dell", "2020", 1000, "blackk","ebay","Good","quid labore amet eram malis aliqua export malis quis sint esse quis summis elit quis malis veniam minim illum");
+        amazonproduct= new SellerProduct(productname, "Dell", "2020", 1000, "blackk","amazon","Good","quid labore amet eram malis aliqua export malis quis sint esse quis summis elit quis malis veniam minim illum");
         optusproduct= new SellerProduct(productname, "Dell", "2020", 1100, "black","optus","Brand New","quem legam esse aliqua amet noster summis eram quorum ipsum multos summis quis anim tamen expoelit summis dolor quis");
       break;
       case "MacBook Pro":
@@ -126,13 +126,13 @@ let Catalogue = {
         optusproduct= new SellerProduct(productname, "lenovo", "2014", 1100, "prism","optus","Brand New","malis aute quis multos sunt fore anim esse ipsum esse illum velit duis minim  esse nisi illum illum sunt quid");
       break;
     }
-    let getinterfacep= document.querySelector(".interfacep");
-    getinterfacep.innerHTML = '<h3><a href="laptop.html">Back</a></h3><img src="img/laptop/'+ productname.toLowerCase()
-     +'.png" class="imagescan"><div><h3>'+ productname +'</h3><div class="row mt-2 py-3 px-2 bg-secondary" id="swtwala"><div  class="col-sm-3 mx-2 my-1" style="background-color:lavender;"><h4>Ebay<button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.compareselectp(1)">Add for comparison</button></h4><img src="img/laptop/ebay/'+ productname.toLowerCase()
+    let getinterfacel= document.querySelector(".interfacel");
+    getinterfacel.innerHTML = '<h3><a href="laptop.html">Back</a></h3><img src="img/laptop/'+ productname.toLowerCase()
+     +'.png" class="imagescan"><div><h3>'+ productname +'</h3><div class="row mt-2 py-3 px-2 bg-secondary" id="swtwala"><div id="xorae" class="col-sm-3 mx-2 my-1" style="background-color:lavender;"><h4>Ebay<a onclick="xoraekocolor()"><button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.compareselectp(1)">Add for comparison</button></a></h4><img src="img/laptop/ebay/'+ productname.toLowerCase()
       +'.png" class="imagessub"><div class="sellersub"><p> <b>Ebay Price:</b> $'+
-     ebayproduct.price+'</p><p><b>Color: </b>'+ebayproduct.color+'</p></div></div><div class="col-sm-3 mx-2 my-1" style="background-color:lavender;"><h4>Amazon<button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.compareselectp(2)">Add for comparison</button></h4><img src="img/laptop/amazon/'+ productname.toLowerCase()
+     ebayproduct.price+'</p><p><b>Color: </b>'+ebayproduct.color+'</p></div></div><div id="xoraa" class="col-sm-3 mx-2 my-1" style="background-color:lavender;"><h4>Amazon<a onclick="xoraakocolor()"><button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.compareselectp(2)">Add for comparison</button></a></h4><img src="img/laptop/amazon/'+ productname.toLowerCase()
       +'.png" class="imagessub"><p><b> Amazon Price:</b> $'+
-     amazonproduct.price+'</p><p><b>Color: </b>'+amazonproduct.color+'</p></div><div class="col-sm-3 mx-2 my-1" style="background-color:lavender;"><h4>Optus<button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.compareselectp(3)">Add for comparison</button></h4><img src="img/laptop/optus/'+ productname.toLowerCase()
+     amazonproduct.price+'</p><p><b>Color: </b>'+amazonproduct.color+'</p></div><div id="xorao" class="col-sm-3 mx-2 my-1" style="background-color:lavender;"><h4>Optus<a onclick="xoraokocolor()"><button class="btn btn-danger btn-block addItemBtn" onclick="Catalogue.compareselectp(3)">Add for comparison</button></a></h4><img src="img/laptop/optus/'+ productname.toLowerCase()
       +'.png" class="imagessub"><p> <b>Optus Price:</b> $'+
      optusproduct.price+'</p><p><b>Color: </b>'+optusproduct.color+'</p></div></div>';
 
@@ -208,22 +208,25 @@ let Catalogue = {
     columnr.setAttribute('class','note');
     let columnm= document.createElement('div');
     columnm.setAttribute('class','note');
-    mero.innerHTML='<div><a href="guitars.html">Back</p></a></div><div class="note"><ul><li><b>Seller</b></li><li><b>Price<b/></li><li><b>Manufacturer</b></li><li><b>Date</b></li><li><b>Color</b></li><li><b>Condition</b></li><li><b>Description</b></li></ul></div>'
+    mero.innerHTML='<div><a href="guitars.html">Back</p></a></div><div class="note"><ul><li class="imageko"><b>Images</b></li><li><b>Seller</b></li><li><b>Price<b/></li><li><b>Manufacturer</b></li><li><b>Date</b></li><li><b>Color</b></li><li><b>Condition</b></li><li><b>Description</b></li></ul></div>'
     if(mytable.rows.length == 1){
         return;
       }
     for (var i = 1; i < mytable.rows.length; i++) {
      var firstCol = mytable.rows[i].cells[0].innerHTML;
      if (firstCol == 1){
-       columns.innerHTML='<div><ul><li>'+swtproduct.seller+'</li><li>$ '+swtproduct.price+'</li><li>'+swtproduct.manufacturer+'</li><li>'+swtproduct.date+'</li><li>'+swtproduct.color+'</li><li>'+swtproduct.condition+'</li><li>'+swtproduct.descp+'</li></ul></div>';
+       columns.innerHTML='<div><ul><li><img src="img/guitars/SweetWater/'+ swtproduct.productname.toLowerCase()
+        +'.png" class="imageslod"></li><li>'+swtproduct.seller+'</li><li>$ '+swtproduct.price+'</li><li>'+swtproduct.manufacturer+'</li><li>'+swtproduct.date+'</li><li>'+swtproduct.color+'</li><li>'+swtproduct.condition+'</li><li>'+swtproduct.descp+'</li></ul></div>';
         mero.appendChild(columns);
      }
      if (firstCol== 2){
-       columnr.innerHTML='<div><ul><li>'+rebproduct.seller+'</li><li>$ '+rebproduct.price+'</li><li>'+rebproduct.manufacturer+'</li><li>'+rebproduct.date+'</li><li>'+rebproduct.color+'</li><li>'+rebproduct.condition+'</li><li>'+rebproduct.descp+'</li></ul></div>';
+       columnr.innerHTML='<div><ul><li><img src="img/guitars/Reverb/'+ rebproduct.productname.toLowerCase()
+        +'.png" class="imageslod"></li><li>'+rebproduct.seller+'</li><li>$ '+rebproduct.price+'</li><li>'+rebproduct.manufacturer+'</li><li>'+rebproduct.date+'</li><li>'+rebproduct.color+'</li><li>'+rebproduct.condition+'</li><li>'+rebproduct.descp+'</li></ul></div>';
         mero.appendChild(columnr);
      }
      if (firstCol== 3){
-       columnm.innerHTML='<div><ul><li>'+manproduct.seller+'</li><li>$ '+manproduct.price+'</li><li>'+manproduct.manufacturer+'</li><li>'+manproduct.date+'</li><li>'+manproduct.color+'</li><li>'+manproduct.condition+'</li><li>'+manproduct.descp+'</li></ul></div>';
+       columnm.innerHTML='<div><ul><li><img src="img/guitars/Manny/'+ manproduct.productname.toLowerCase()
+        +'.png" class="imageslod"></li><li>'+manproduct.seller+'</li><li>$ '+manproduct.price+'</li><li>'+manproduct.manufacturer+'</li><li>'+manproduct.date+'</li><li>'+manproduct.color+'</li><li>'+manproduct.condition+'</li><li>'+manproduct.descp+'</li></ul></div>';
           mero.appendChild(columnm);
      }
 
@@ -242,22 +245,25 @@ let Catalogue = {
    columnr.setAttribute('class','note');
    let columnm= document.createElement('div');
    columnm.setAttribute('class','note');
-   mero.innerHTML='<div><a href="smartphones.html">Back</p></a></div><div class="note"><ul><li><b>Seller</b></li><li><b>Price<b/></li><li><b>Manufacturer</b></li><li><b>Date</b></li><li><b>Color</b></li><li><b>Condition</b></li><li><b>Description</b></li></ul></div>'
+   mero.innerHTML='<div><a href="smartphones.html">Back</p></a></div><div class="note"><ul><li class="imageko"><b>Images</b></li><li><b>Seller</b></li><li><b>Price<b/></li><li><b>Manufacturer</b></li><li><b>Date</b></li><li><b>Color</b></li><li><b>Condition</b></li><li><b>Description</b></li></ul></div>'
    if(mytable.rows.length == 1){
        return;
      }
    for (var i = 1; i < mytable.rows.length; i++) {
     var firstCol = mytable.rows[i].cells[0].innerHTML;
     if (firstCol == 1){
-      columns.innerHTML='<div><ul><li>'+ebayproduct.seller+'</li><li>$ '+ebayproduct.price+'</li><li>'+ebayproduct.manufacturer+'</li><li>'+ebayproduct.date+'</li><li>'+ebayproduct.color+'</li><li>'+ebayproduct.condition+'</li><li>'+ebayproduct.descp+'</li></ul></div>';
+      columns.innerHTML='<div><ul><li><img src="img/electronics/ebay/'+ ebayproduct.productname.toLowerCase()
+       +'.png" class="imageslod"></li><li>'+ebayproduct.seller+'</li><li>$ '+ebayproduct.price+'</li><li>'+ebayproduct.manufacturer+'</li><li>'+ebayproduct.date+'</li><li>'+ebayproduct.color+'</li><li>'+ebayproduct.condition+'</li><li>'+ebayproduct.descp+'</li></ul></div>';
        mero.appendChild(columns);
     }
     if (firstCol== 2){
-      columnr.innerHTML='<div><ul><li>'+amazonproduct.seller+'</li><li>$ '+amazonproduct.price+'</li><li>'+amazonproduct.manufacturer+'</li><li>'+amazonproduct.date+'</li><li>'+amazonproduct.color+'</li><li>'+amazonproduct.condition+'</li><li>'+amazonproduct.descp+'</li></ul></div>';
+      columnr.innerHTML='<div><ul><li><img src="img/electronics/amazon/'+ amazonproduct.productname.toLowerCase()
+       +'.png" class="imageslod"></li><li>'+amazonproduct.seller+'</li><li>$ '+amazonproduct.price+'</li><li>'+amazonproduct.manufacturer+'</li><li>'+amazonproduct.date+'</li><li>'+amazonproduct.color+'</li><li>'+amazonproduct.condition+'</li><li>'+amazonproduct.descp+'</li></ul></div>';
        mero.appendChild(columnr);
     }
     if (firstCol== 3){
-      columnm.innerHTML='<div><ul><li>'+optusproduct.seller+'</li><li>$ '+optusproduct.price+'</li><li>'+optusproduct.manufacturer+'</li><li>'+optusproduct.date+'</li><li>'+optusproduct.color+'</li><li>'+optusproduct.condition+'</li><li>'+optusproduct.descp+'</li></ul></div>';
+      columnm.innerHTML='<div><ul><li><img src="img/electronics/optus/'+ optusproduct.productname.toLowerCase()
+       +'.png" class="imageslod"></li><li>'+optusproduct.seller+'</li><li>$ '+optusproduct.price+'</li><li>'+optusproduct.manufacturer+'</li><li>'+optusproduct.date+'</li><li>'+optusproduct.color+'</li><li>'+optusproduct.condition+'</li><li>'+optusproduct.descp+'</li></ul></div>';
          mero.appendChild(columnm);
     }
 
@@ -276,22 +282,25 @@ fullcomparel: function(){
   columnr.setAttribute('class','note');
   let columnm= document.createElement('div');
   columnm.setAttribute('class','note');
-  mero.innerHTML='<div><a href="laptop.html">Back</p></a></div><div class="note"><ul><li><b>Seller</b></li><li><b>Price<b/></li><li><b>Manufacturer</b></li><li><b>Date</b></li><li><b>Color</b></li><li><b>Condition</b></li><li><b>Description</b></li></ul></div>'
+  mero.innerHTML='<div><a href="laptop.html">Back</p></a></div><div class="note"><ul><li class="imageko"><b>Images</b></li><li><b>Seller</b></li><li><b>Price<b/></li><li><b>Manufacturer</b></li><li><b>Date</b></li><li><b>Color</b></li><li><b>Condition</b></li><li><b>Description</b></li></ul></div>'
   if(mytable.rows.length == 1){
       return;
     }
   for (var i = 1; i < mytable.rows.length; i++) {
    var firstCol = mytable.rows[i].cells[0].innerHTML;
    if (firstCol == 1){
-     columns.innerHTML='<div><ul><li>'+ebayproduct.seller+'</li><li>$ '+ebayproduct.price+'</li><li>'+ebayproduct.manufacturer+'</li><li>'+ebayproduct.date+'</li><li>'+ebayproduct.color+'</li><li>'+ebayproduct.condition+'</li><li>'+ebayproduct.descp+'</li></ul></div>';
+     columns.innerHTML='<div><ul><li><img src="img/laptop/ebay/'+ ebayproduct.productname.toLowerCase()
+      +'.png" class="imageslod"></li><li>'+ebayproduct.seller+'</li><li>$ '+ebayproduct.price+'</li><li>'+ebayproduct.manufacturer+'</li><li>'+ebayproduct.date+'</li><li>'+ebayproduct.color+'</li><li>'+ebayproduct.condition+'</li><li>'+ebayproduct.descp+'</li></ul></div>';
       mero.appendChild(columns);
    }
    if (firstCol== 2){
-     columnr.innerHTML='<div><ul><li>'+amazonproduct.seller+'</li><li>$ '+amazonproduct.price+'</li><li>'+amazonproduct.manufacturer+'</li><li>'+amazonproduct.date+'</li><li>'+amazonproduct.color+'</li><li>'+amazonproduct.condition+'</li><li>'+amazonproduct.descp+'</li></ul></div>';
+     columnr.innerHTML='<div><ul><li><img src="img/laptop/amazon/'+ amazonproduct.productname.toLowerCase()
+      +'.png" class="imageslod"></li><li>'+amazonproduct.seller+'</li><li>$ '+amazonproduct.price+'</li><li>'+amazonproduct.manufacturer+'</li><li>'+amazonproduct.date+'</li><li>'+amazonproduct.color+'</li><li>'+amazonproduct.condition+'</li><li>'+amazonproduct.descp+'</li></ul></div>';
       mero.appendChild(columnr);
    }
    if (firstCol== 3){
-     columnm.innerHTML='<div><ul><li>'+optusproduct.seller+'</li><li>$ '+optusproduct.price+'</li><li>'+optusproduct.manufacturer+'</li><li>'+optusproduct.date+'</li><li>'+optusproduct.color+'</li><li>'+optusproduct.condition+'</li><li>'+optusproduct.descp+'</li></ul></div>';
+     columnm.innerHTML='<div><ul><li><img src="img/laptop/optus/'+ optusproduct.productname.toLowerCase()
+      +'.png" class="imageslod"></li><li>'+optusproduct.seller+'</li><li>$ '+optusproduct.price+'</li><li>'+optusproduct.manufacturer+'</li><li>'+optusproduct.date+'</li><li>'+optusproduct.color+'</li><li>'+optusproduct.condition+'</li><li>'+optusproduct.descp+'</li></ul></div>';
         mero.appendChild(columnm);
    }
 
