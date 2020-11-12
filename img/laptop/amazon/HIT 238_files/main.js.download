@@ -1,0 +1,20 @@
+
+
+
+function addingredients() {
+
+    localStorage.setItem('ingredents', '["Butter","Garlic","Flour","Milk","Spinach"]');
+
+
+
+}
+
+addingredients();
+
+function loadIngredients(){
+  if(localStorage.getItem('data') != null){
+    let output= document.querySelector("#output");
+    loaded= JSON.parse(localStorage.getItem('ingredients'));
+    output.innerHTML='<h2>Ingredients</h2><ul><li>'+loaded[0]+'</li><li>'+loaded[1]+'</li><li>'+loaded[2]+'</li><li>'+loaded[3]+'</li><li>'+loaded[4]+'</li></ul>';
+  }
+}

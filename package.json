@@ -1,0 +1,25 @@
+{
+  "name": "HIT238-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "service-worker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Biratthapa/HIT238-app.git"
+  },
+  "keywords": [],
+  "author": "Birat Thapa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Biratthapa/HIT238-app/issues"
+  },
+  "homepage": "https://github.com/Biratthapa/HIT238-app#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "puppeteer": "^5.4.1",
+    "request": "^2.88.2"
+  }
+}

@@ -1,7 +1,9 @@
 
 let Catalogue = {
+
   productcardsg: function(productname){
     this.listproductg(productname);
+
   },
   listproductg: function(productname){
     switch (productname){
@@ -71,10 +73,11 @@ let Catalogue = {
   listproductp: function(productname){
     switch (productname){
       case "Samsung s10":
-        product = new Product(productname , "Samsung s10");
-        ebayproduct= new SellerProduct(productname, "Samsung s10", "2019", 990, "white","ebay","Good","dolor summis velit fore aliqua illum export quorum enim quem elit quae eram fore cillum quid malis multos amet");
-        amazonproduct= new SellerProduct(productname, "Samsung s10", "2020", 1000, "blackk","amazon","Good","quid labore amet eram malis aliqua export malis quis sint esse quis summis elit quis malis veniam minim illum");
-        optusproduct= new SellerProduct(productname, "Samsung s10", "2020", 1100, "black","optus","Brand New","quem legam esse aliqua amet noster summis eram quorum ipsum multos summis quis anim tamen expoelit summis dolor quis");
+
+        product = new Product(productname , "Samsung");
+        ebayproduct= new SellerProduct(productname, "Samsung", "2019", 990, "white","ebay","Good","Just a few minor issues");
+        amazonproduct= new SellerProduct(productname, "Samsung", "2020", 123, "blue","amazon","Good","quid labore amet eram malis aliqua export malis quis sint esse quis summis elit quis malis veniam minim illum");
+        optusproduct= new SellerProduct(productname, "Samsung", "2020", 1100, "black","optus","Brand New","quem legam esse aliqua amet noster summis eram quorum ipsum multos summis quis anim tamen expoelit summis dolor quis");
       break;
       case "Iphone X":
         product = new Product(productname , "Apple");
@@ -87,6 +90,24 @@ let Catalogue = {
         ebayproduct= new SellerProduct(productname, "huawei", "2019", 990, "blue","ebay","Meh","esse aute amet sunt dolor dolor sunt eram multos quae quae labore summis tempor nulla irure elit dolore quid sunt");
         amazonproduct= new SellerProduct(productname, "huawei", "2015", 1000, "purple","amazon","minor issues","cillum nisi dolor veniam minim anim export tamen aliqua legam sunt dolore aliqua malis labore magna eram labore dolor noster");
         optusproduct= new SellerProduct(productname, "huawei", "2019", 1100, "prism","optus","Brand New","malis aute quis multos sunt fore anim esse ipsum esse illum velit duis minim  esse nisi illum illum sunt quid");
+      break;
+      case "Xiomi":
+        product = new Product(productname , "Xiomi");
+        ebayproduct= new SellerProduct(productname, "xiomi", "2020", 600, "black","ebay","Meh","esse aute amet sunt dolor dolor sunt eram multos quae quae labore summis tempor nulla irure elit dolore quid sunt");
+        amazonproduct= new SellerProduct(productname, "xiomi", "2020", 750, "black","amazon","minor issues","cillum nisi dolor veniam minim anim export tamen aliqua legam sunt dolore aliqua malis labore magna eram labore dolor noster");
+        optusproduct= new SellerProduct(productname, "xiomi", "2019", 450, "red","optus","Brand New","malis aute quis multos sunt fore anim esse ipsum esse illum velit duis minim  esse nisi illum illum sunt quid");
+      break;
+      case "Pocophone":
+        product = new Product(productname , "Xiomi");
+        ebayproduct= new SellerProduct(productname, "xiomi", "2019", 600, "blue","ebay","Meh","esse aute amet sunt dolor dolor sunt eram multos quae quae labore summis tempor nulla irure elit dolore quid sunt");
+        amazonproduct= new SellerProduct(productname, "xiomi", "2018", 750, "black","amazon","minor issues","cillum nisi dolor veniam minim anim export tamen aliqua legam sunt dolore aliqua malis labore magna eram labore dolor noster");
+        optusproduct= new SellerProduct(productname, "xiomi", "2019", 450, "black","optus","Brand New","malis aute quis multos sunt fore anim esse ipsum esse illum velit duis minim  esse nisi illum illum sunt quid");
+      break;
+      case "Nokia":
+        product = new Product(productname , "Nokia");
+        ebayproduct= new SellerProduct(productname, "Nokia", "2004", 600, "blue","ebay","Meh","esse aute amet sunt dolor dolor sunt eram multos quae quae labore summis tempor nulla irure elit dolore quid sunt");
+        amazonproduct= new SellerProduct(productname, "Nokia", "2015", 80, "blue","amazon","minor issues","cillum nisi dolor veniam minim anim export tamen aliqua legam sunt dolore aliqua malis labore magna eram labore dolor noster");
+        optusproduct= new SellerProduct(productname, "Nokia", "2019", 210, "yellow","optus","Brand New","malis aute quis multos sunt fore anim esse ipsum esse illum velit duis minim  esse nisi illum illum sunt quid");
       break;
 
     }

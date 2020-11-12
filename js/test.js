@@ -1,5 +1,5 @@
 
-if ('serviceWorker' in navigator){
+if ('serviceWorker' in navigator){  //service worker registration
    navigator.serviceWorker
    .register('./service-worker.js', { scope: './' })
    .then(function(registration){
@@ -9,15 +9,15 @@ if ('serviceWorker' in navigator){
      console.log("Service Worker Failed to register", err);
    })
 }
-function myFunction() {
+function myFunction() { //togging class wrapper for interfacef which will turn it into flex box
   var element = document.getElementById("interfacef");
   element.classList.toggle("wrapper");
 }
-function showme(){
+function showme(){ //this is for making the table visible when user clicks into a specific product
   var e=document.querySelector(".added")
   e.style.visibility= 'visible';
 }
-function xoraekocolor(){
+function xoraekocolor(){  //this is for color changing when user clicks different prices.
   var xorae=document.querySelector("#xorae")
   xorae.style.backgroundColor='#f07878';
 }
